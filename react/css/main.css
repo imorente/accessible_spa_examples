@@ -2225,14 +2225,14 @@ h1, h2, h3 {
   font-family: ssp, Helvetica Neue, Sans-serif; }
 
 h2 {
-  padding: 2.5rem 0 1.5em;
+  padding: 2.5rem 0 1.5rem;
   font-size: 3.2rem;
-  line-height: 3.6rem; }
+  line-height: 3.2rem; }
 
 h3 {
-  margin: 3rem 0 0 0;
-  font-size: 2.2rem;
-  line-height: 2.5rem; }
+  margin: 20px 0 15px;
+  font-size: 1.8rem;
+  line-height: 1.8rem; }
 
 .hidden {
   display: none; }
@@ -2402,3 +2402,20 @@ blockquote {
     left: 0; }
   .carousel .arrows button[data-type=next] {
     right: 0; }
+
+
+  .field {
+    padding: 10px 0;
+  }
+  .field label {
+    width: 20%;
+    display: inline-block;
+  }
+  button[type="submit"] {
+    margin: 10px 0;
+  }
+
+  footer[role="contentinfo"] {
+    margin: 10px 0 0;
+    padding: 20px 0;
+  }

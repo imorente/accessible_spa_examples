@@ -18,7 +18,7 @@ export default React.createClass({
 						<div id="a11y_announcer" aria-live="polite" className="vh"></div>
 						<h1>Modern A11y</h1>
 						<nav role="navigation" id="sitenav">
-							<NavLink to="/">Home</NavLink>
+							<NavLink to="/" onlyActiveOnIndex>Home</NavLink>
 							<NavLink to="/blog">Blog</NavLink>
 							<NavLink to="/about">About</NavLink>
 							<NavLink to="/contact">Contact</NavLink>

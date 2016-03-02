@@ -1,0 +1,1 @@
+/Users/pfox/Projects/FluentExamples/library-app/tmp/funnel-input_base_path-7BSmCrJw.tmp/0/-private/instance-initializers/initialize-store-service.js

@@ -1,0 +1,1 @@
+{"modulePrefix":"library-app","environment":"development","contentSecurityPolicy":{"connect-src":"'self' https://auth.firebase.com wss://*.firebaseio.com"},"firebase":"https://spa-a11y-ember.firebaseio.com/","baseURL":"/","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{"name":"library-app","version":"2.3.0+15cc4ba4"},"exportApplicationGlobal":true,"ember-faker":{}}

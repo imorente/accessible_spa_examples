@@ -1,0 +1,1 @@
+/Users/pfox/Projects/FluentExamples/library-app/tmp/broccoli_merge_trees-input_base_path-vlPLg3aX.tmp/18/helpers/stub-firebase.js

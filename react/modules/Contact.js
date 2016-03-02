@@ -4,8 +4,8 @@ export default React.createClass({
 	render() {
 		return(
 			<div>
-				<h2 data-page-title="Contact Us">This is the contact page!</h2>
-				<h3>Have something to say? Let us know what you think! Yeah!</h3>
+				<h2 data-page-title="Contact Us">Contact Us</h2>
+				<h3>Have something to say? Let us know what you think!</h3>
 				<form method="" action="">
 					<div className="field">
 						<label htmlFor="name">Name</label>
