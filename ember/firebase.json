@@ -1,5 +1,5 @@
 {
-  "firebase": "library-app",
+  "firebase": "spa-a11y-ember",
   "public": "dist",
   "rewrites": [{
     "source": "**",

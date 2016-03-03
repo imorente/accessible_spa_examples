@@ -2152,7 +2152,8 @@ body {
 .vh {
   position: absolute;
   height: 1px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .testing {
   position: absolute;

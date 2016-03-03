@@ -1,0 +1,9 @@
+{
+  "firebase": "spa-a11y-react",
+  "public": "",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
