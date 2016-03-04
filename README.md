@@ -5,7 +5,7 @@ This repo provides working examples of single-page applications (SPA's) with imp
 
 ##The Accessibility Problem with SPA's
 
-SPA's seek to improve overall performance and efficiency by dynamically loading only the content and UI that needs to change vs. reloading and requesting all of the same assets with each page load.
+SPA's seek to improve overall performance and efficiency by dynamically loading only the content and UI that needs to change vs. requesting and reloading many of the same assets with each page load.
 
 One basic issue concerning SPA accessibilty is that assistive technology (screen readers in this case) are not aware of dynamically loaded content. Screen readers are tuned to document refreshes. It is up to us as UX designers and developers to ensure that pertinent, dynamic content or UI changes are brought to the attention of users.
 
@@ -20,24 +20,49 @@ One solution is to emulate a page refresh by announcing when a view/page loaded
 
 ##Frameworks
 
-The following framework examples are provided:
+The following framework examples are covered:
 
-- React (0.14) - based on https://github.com/reactjs/react-router-tutorial
-- Angular 2 - based on https://github.com/mgechev/angular2-seed
-- Ember (2.4) - based on git@github.com:zoltan-nz/library-app.git
+- React (0.14) - based on <a href="https://github.com/reactjs/react-router-tutorial" target="gh">react's react-router-tutorial</a>
+- Angular 2 - based on the <a href="https://github.com/mgechev/angular2-seed" target="gh">angular2-seed project</a>
+- Ember (2.4) - based on <a href="https://github.com:zoltan-nz/library-app.git">zoltan-nz's library-app</a>
 
 Each project folder contains a Readme.md with instructions for installing and running each project.
 
 Each of these frameworks provides lifecycle event hooks that allow us to determine when the view update is complete.
 
+###Overview
+
+Every worthwhile SPA framework has an event lifecycle and hooks that you can utilize. 
+
 ### React
 
+React provides a `componentDidUpdate` method that is fired after the initial component load. Each component.
 
+In this example, all components/views are rendered by a parent component, `modules/App.js`. Whenever any update is made to the parent or child component, `componentDidUpdate()` will be invoked.
 
 ### Angular 2
 
+Angular 2 provides a `ngAfterViewInit` method that is invoked every time a Component view is rendered. 
 
+In this example, the 2 components (`home` and `about`) have their own folder that contains all component dependencies. Both `src/about/about.component.ts` and `src/home/home.component.ts` utilize `ngAfterViewInit` to invoke the `announce_view_loaded` helper method.
 
-### Ember
+### Ember 2
 
+In Ember 2, Ember 1.x views were scrapped in favor of using more generic components. Ember has the concept of a Run Loop with a sequence of queues that we can subscribe to. 
+
+This Ember app uses a router file (`app/router.js`) to define and map each route. Route-specific actions are defined in a route file named for that particular route (e.g. `app/routes/about.js`). While Ember will automatically render a file with the same name as its route, Ember.Route provides an explicit `renderTemplate()` method in which we can specifiy the template file and subscribe to the `afterRender` queue in the Ember Run Loop.
+
+```
+//from routes/about.js
+
+export default Ember.Route.extend({
+...
+  renderTemplate() {
+    this.render('contact');
+    Ember.run.scheduleOnce('afterRender', this, function() {
+      announce_view_loaded();
+    });
+  },
+...
+```
 
