@@ -14,7 +14,7 @@ In particular, when navigating from one view to another, no indication is provid
 Generally, a page refresh is announced to the user by some aubible "loading" cue, the new page title, and often a spoken loading progress indicator.
 
 
-## A Solution
+## An Accessible Solution
 
 One solution is to emulate a native page refresh by announcing when a view/page loaded.
 
@@ -23,6 +23,8 @@ We want to convey to the user:
 - the view loaded status
 
 Using a simple a global "announcer" live region and a simple script, we can easily assemble a message and updating the announcer with the message. Screen readers in turn will pick up and announce this message.
+
+<script src="https://gist.github.com/patrickfox/ed600b3b38c2cfab2b11.js"></script>
 
 ## Test Frameworks
 
