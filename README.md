@@ -11,20 +11,22 @@ One basic issue concerning SPA accessibilty is that assistive technology (screen
 
 In particular, when navigating from one view to another, no indication is provided to the user that anything has changed. This is unlike traditional page navigation via page refresh, where the screen reader provides a consistent pattern of alerting the user to the page refresh.
 
-Generally, a page refresh is announced to the user by some aubible "loading" cue, the new page title, and often a spoken loading progress indicator.
-
 
 ## An Accessible Solution
 
 One solution is to emulate a native page refresh by announcing when a view/page loaded.
 
+Generally, a page refresh is announced to the user by an aubible "loading" cue, the new page title, and often a spoken loading progress indicator.
+
 We want to convey to the user:
 - the new page/view title
 - the view loaded status
 
-Using a simple a global "announcer" live region and a simple script, we can easily assemble a message and updating the announcer with the message. Screen readers in turn will pick up and announce this message.
+## Implementation
 
-<script src="https://gist.github.com/patrickfox/ed600b3b38c2cfab2b11.js"></script>
+Using a global "announcer" live region and a simple script, we can easily assemble a message and updating the announcer with the message. Screen readers in turn will pick up and announce this message.
+
+<script src="http://gist.github.com/patrickfox/ed600b3b38c2cfab2b11.js"></script>
 
 ## Test Frameworks
 
@@ -41,7 +43,7 @@ Each framework folder contains a Readme.md with instructions for installing and 
 
 Each of these frameworks provides lifecycle event hooks that allow us to determine when the view update is complete.
 
-The goal is to call our `annaounce_view_loaded()` helper method after the view is rendered in the page.
+The goal is to call our `announce_view_loaded()` helper method after the view is rendered in the page.
 
 ### React
 
