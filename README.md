@@ -3,7 +3,7 @@ Various single-page example apps that implement an accessible solution to improv
 
 This repo provides working examples of single-page applications (SPA's) with improved accessibility.
 
-##The Accessibility Problem with SPA's
+## The Accessibility Problem with SPA's
 
 SPA's seek to improve overall performance and efficiency by dynamically loading only the content and UI that needs to change vs. requesting and reloading many of the same assets with each page load.
 
@@ -14,25 +14,26 @@ In particular, when navigating from one view to another, no indication is provid
 Generally, a page refresh is announced to the user by some aubible "loading" cue, the new page title, and often a spoken loading progress indicator.
 
 
-##A Solution
+## A Solution
 
 One solution is to emulate a page refresh by announcing when a view/page loaded
 
-##Frameworks
+## Frameworks
 
 The following framework examples are covered:
 
 - React (0.14) - based on <a href="https://github.com/reactjs/react-router-tutorial" target="gh">react's react-router-tutorial</a>
 - Angular 2 - based on the <a href="https://github.com/mgechev/angular2-seed" target="gh">angular2-seed project</a>
-- Ember (2.4) - based on <a href="https://github.com:zoltan-nz/library-app.git">zoltan-nz's library-app</a>
+- Ember (2.4) - based on <a href="https://github.com/zoltan-nz/library-app" target="gh">zoltan-nz's library-app project</a>
 
-Each project folder contains a Readme.md with instructions for installing and running each project.
+Each framework folder contains a Readme.md with instructions for installing and running each project.
+
+
+### Overview
 
 Each of these frameworks provides lifecycle event hooks that allow us to determine when the view update is complete.
 
-###Overview
-
-Every worthwhile SPA framework has an event lifecycle and hooks that you can utilize. 
+The goal is to call our `annaounce_view_loaded()` helper method after the view is rendered in the page.
 
 ### React
 
@@ -50,7 +51,7 @@ In this example, the 2 components (`home` and `about`) have their own folder tha
 
 In Ember 2, Ember 1.x views were scrapped in favor of using more generic components. Ember has the concept of a Run Loop with a sequence of queues that we can subscribe to. 
 
-This Ember app uses a router file (`app/router.js`) to define and map each route. Route-specific actions are defined in a route file named for that particular route (e.g. `app/routes/about.js`). While Ember will automatically render a file with the same name as its route, Ember.Route provides an explicit `renderTemplate()` method in which we can specifiy the template file and subscribe to the `afterRender` queue in the Ember Run Loop.
+This Ember app uses a router file (`app/router.js`) to define and map each route. Route-specific actions are defined in a route file named for that particular route (e.g. `app/routes/about.js`). While Ember will automatically render a file with the same name as its route, Ember.Route provides an explicit `renderTemplate()` method in which we can specify the template file and subscribe to the `afterRender` event queue in the Ember Run Loop.
 
 ```
 //from routes/about.js
@@ -58,7 +59,7 @@ This Ember app uses a router file (`app/router.js`) to define and map each route
 export default Ember.Route.extend({
 ...
   renderTemplate() {
-    this.render('contact');
+    this.render('about');
     Ember.run.scheduleOnce('afterRender', this, function() {
       announce_view_loaded();
     });
