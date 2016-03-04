@@ -16,9 +16,15 @@ Generally, a page refresh is announced to the user by some aubible "loading" cue
 
 ## A Solution
 
-One solution is to emulate a page refresh by announcing when a view/page loaded
+One solution is to emulate a native page refresh by announcing when a view/page loaded.
 
-## Frameworks
+We want to convey to the user:
+- the new page/view title
+- the view loaded status
+
+Using a simple a global "announcer" live region and a simple script, we can easily assemble a message and updating the announcer with the message. Screen readers in turn will pick up and announce this message.
+
+## Test Frameworks
 
 The following framework examples are covered:
 
