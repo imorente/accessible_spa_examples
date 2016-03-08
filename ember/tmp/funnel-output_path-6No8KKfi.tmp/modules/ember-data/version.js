@@ -1,1 +1,0 @@
-/Users/pfox/Projects/FluentExamples/library-app/tmp/creator-output_path-7t8tvrwz.tmp/version.js

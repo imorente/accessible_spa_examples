@@ -1,1 +1,0 @@
-/Users/pfox/Projects/FluentExamples/library-app/app/components/fader-label.js
