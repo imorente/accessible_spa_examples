@@ -326,7 +326,7 @@ define('library-app/helpers/utils', ['exports'], function (exports) {
 	function announce_view_loaded() {
 		var page_title, page_title_el;
 		page_title_el = document.querySelector('[data-page-title]');
-		if (page_title_el != null) {
+		if (page_title_el !== null) {
 			page_title = page_title_el.getAttribute('data-page-title') || page_title_el.innerText;
 			page_title = page_title === 'true' ? page_title_el.innerText : page_title;
 		} else {
@@ -338,7 +338,7 @@ define('library-app/helpers/utils', ['exports'], function (exports) {
 	function set_title(page_title) {
 		page_title = site_title + page_title;
 		document.title = page_title;
-		announce(page_title + ' page loaded', 'assertive');
+		announce(page_title + ' page loaded', 'polite');
 	};
 
 	var announce_timeout = null;
@@ -347,17 +347,21 @@ define('library-app/helpers/utils', ['exports'], function (exports) {
 		var announcer, clear_announcer;
 		manners = manners || 'polite';
 		announcer = document.getElementById('a11y_announcer');
-		announcer.setAttribute('aria-live', 'off');
-		clear_announcer = function () {
-			announcer.innerHTML = '';
-			announce_timeout = null;
+		if (announcer) {
+			announcer.setAttribute('aria-live', 'off');
+			clear_announcer = function () {
+				announcer.innerHTML = '';
+				announce_timeout = null;
+				return announcer;
+			};
+			announcer.setAttribute('aria-live', manners);
+			announcer.innerHTML = message;
+			clearTimeout(announce_timeout);
+			announce_timeout = setTimeout(clear_announcer, 500);
 			return announcer;
-		};
-		announcer.setAttribute('aria-live', manners);
-		announcer.innerHTML = message;
-		clearTimeout(announce_timeout);
-		announce_timeout = setTimeout(clear_announcer, 500);
-		return announcer;
+		} else {
+			alert('a11y_announcer not found');
+		}
 	};
 
 	exports.announce_view_loaded = announce_view_loaded;
@@ -4312,7 +4316,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("library-app/app")["default"].create({"name":"library-app","version":"2.3.0+57f3f8f3"});
+  require("library-app/app")["default"].create({"name":"library-app","version":"2.3.0+e87c7e9b"});
 }
 
 /* jshint ignore:end */

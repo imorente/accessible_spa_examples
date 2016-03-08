@@ -17,7 +17,7 @@ function announce_view_loaded() {
 function set_title(page_title) {
 	page_title = site_title + page_title;
 	document.title = page_title;
-	announce(page_title + ' page loaded', 'assertive');
+	announce(page_title + ' page loaded', 'polite');
 };
 
 var announce_timeout = null;

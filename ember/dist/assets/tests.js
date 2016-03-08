@@ -1,8 +1,8 @@
 define('library-app/tests/adapters/application.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - adapters');
-  QUnit.test('adapters/application.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - adapters/application.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'adapters/application.js should pass jshint.');
   });
@@ -10,8 +10,8 @@ define('library-app/tests/adapters/application.jshint', ['exports'], function (e
 define('library-app/tests/app.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - .');
-  QUnit.test('app.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - app.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'app.js should pass jshint.');
   });
@@ -19,8 +19,8 @@ define('library-app/tests/app.jshint', ['exports'], function (exports) {
 define('library-app/tests/components/abc-buttons.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - components');
-  QUnit.test('components/abc-buttons.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - components/abc-buttons.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'components/abc-buttons.js should pass jshint.');
   });
@@ -28,8 +28,8 @@ define('library-app/tests/components/abc-buttons.jshint', ['exports'], function 
 define('library-app/tests/components/contact.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - components');
-  QUnit.test('components/contact.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - components/contact.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'components/contact.js should pass jshint.');
   });
@@ -37,8 +37,8 @@ define('library-app/tests/components/contact.jshint', ['exports'], function (exp
 define('library-app/tests/components/fader-label.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - components');
-  QUnit.test('components/fader-label.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - components/fader-label.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'components/fader-label.js should pass jshint.');
   });
@@ -46,8 +46,8 @@ define('library-app/tests/components/fader-label.jshint', ['exports'], function 
 define('library-app/tests/components/library-item-form.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - components');
-  QUnit.test('components/library-item-form.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - components/library-item-form.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'components/library-item-form.js should pass jshint.');
   });
@@ -55,8 +55,8 @@ define('library-app/tests/components/library-item-form.jshint', ['exports'], fun
 define('library-app/tests/components/library-item.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - components');
-  QUnit.test('components/library-item.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - components/library-item.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'components/library-item.js should pass jshint.');
   });
@@ -64,8 +64,8 @@ define('library-app/tests/components/library-item.jshint', ['exports'], function
 define('library-app/tests/components/nav-link-to.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - components');
-  QUnit.test('components/nav-link-to.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - components/nav-link-to.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'components/nav-link-to.js should pass jshint.');
   });
@@ -73,8 +73,8 @@ define('library-app/tests/components/nav-link-to.jshint', ['exports'], function 
 define('library-app/tests/components/number-box.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - components');
-  QUnit.test('components/number-box.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - components/number-box.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'components/number-box.js should pass jshint.');
   });
@@ -82,8 +82,8 @@ define('library-app/tests/components/number-box.jshint', ['exports'], function (
 define('library-app/tests/components/seeder-block.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - components');
-  QUnit.test('components/seeder-block.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - components/seeder-block.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'components/seeder-block.js should pass jshint.');
   });
@@ -91,8 +91,8 @@ define('library-app/tests/components/seeder-block.jshint', ['exports'], function
 define('library-app/tests/components/spinner-cube.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - components');
-  QUnit.test('components/spinner-cube.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - components/spinner-cube.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'components/spinner-cube.js should pass jshint.');
   });
@@ -100,8 +100,8 @@ define('library-app/tests/components/spinner-cube.jshint', ['exports'], function
 define('library-app/tests/controllers/admin/seeder.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - controllers/admin');
-  QUnit.test('controllers/admin/seeder.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - controllers/admin/seeder.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'controllers/admin/seeder.js should pass jshint.');
   });
@@ -109,8 +109,8 @@ define('library-app/tests/controllers/admin/seeder.jshint', ['exports'], functio
 define('library-app/tests/controllers/index.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - controllers');
-  QUnit.test('controllers/index.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - controllers/index.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'controllers/index.js should pass jshint.');
   });
@@ -118,8 +118,8 @@ define('library-app/tests/controllers/index.jshint', ['exports'], function (expo
 define('library-app/tests/controllers/libraries/index.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - controllers/libraries');
-  QUnit.test('controllers/libraries/index.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - controllers/libraries/index.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'controllers/libraries/index.js should pass jshint.');
   });
@@ -188,8 +188,8 @@ define('library-app/tests/helpers/resolver', ['exports', 'ember/resolver', 'libr
 define('library-app/tests/helpers/resolver.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - helpers');
-  QUnit.test('helpers/resolver.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - helpers/resolver.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'helpers/resolver.js should pass jshint.');
   });
@@ -215,8 +215,8 @@ define('library-app/tests/helpers/start-app', ['exports', 'ember', 'library-app/
 define('library-app/tests/helpers/start-app.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - helpers');
-  QUnit.test('helpers/start-app.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - helpers/start-app.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'helpers/start-app.js should pass jshint.');
   });
@@ -282,17 +282,17 @@ define('library-app/tests/helpers/unstub-firebase', ['exports', 'firebase'], fun
 define('library-app/tests/helpers/utils.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - helpers');
-  QUnit.test('helpers/utils.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - helpers/utils.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'helpers/utils.js should pass jshint.\nhelpers/utils.js: line 1, col 1, Use the function form of "use strict".\nhelpers/utils.js: line 15, col 2, Unnecessary semicolon.\nhelpers/utils.js: line 21, col 2, Unnecessary semicolon.\nhelpers/utils.js: line 40, col 2, Unnecessary semicolon.\nhelpers/utils.js: line 42, col 32, Missing semicolon.\n\n5 errors');
+    assert.ok(false, 'helpers/utils.js should pass jshint.\nhelpers/utils.js: line 1, col 1, Use the function form of "use strict".\nhelpers/utils.js: line 15, col 2, Unnecessary semicolon.\nhelpers/utils.js: line 21, col 2, Unnecessary semicolon.\nhelpers/utils.js: line 44, col 2, Unnecessary semicolon.\nhelpers/utils.js: line 46, col 32, Missing semicolon.\n\n5 errors');
   });
 });
 define('library-app/tests/models/author.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - models');
-  QUnit.test('models/author.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - models/author.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'models/author.js should pass jshint.');
   });
@@ -300,8 +300,8 @@ define('library-app/tests/models/author.jshint', ['exports'], function (exports)
 define('library-app/tests/models/book.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - models');
-  QUnit.test('models/book.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - models/book.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'models/book.js should pass jshint.');
   });
@@ -309,8 +309,8 @@ define('library-app/tests/models/book.jshint', ['exports'], function (exports) {
 define('library-app/tests/models/contact.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - models');
-  QUnit.test('models/contact.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - models/contact.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'models/contact.js should pass jshint.');
   });
@@ -318,8 +318,8 @@ define('library-app/tests/models/contact.jshint', ['exports'], function (exports
 define('library-app/tests/models/invitation.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - models');
-  QUnit.test('models/invitation.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - models/invitation.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'models/invitation.js should pass jshint.');
   });
@@ -327,8 +327,8 @@ define('library-app/tests/models/invitation.jshint', ['exports'], function (expo
 define('library-app/tests/models/library.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - models');
-  QUnit.test('models/library.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - models/library.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'models/library.js should pass jshint.');
   });
@@ -336,8 +336,8 @@ define('library-app/tests/models/library.jshint', ['exports'], function (exports
 define('library-app/tests/resolver.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - .');
-  QUnit.test('resolver.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - resolver.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'resolver.js should pass jshint.');
   });
@@ -345,8 +345,8 @@ define('library-app/tests/resolver.jshint', ['exports'], function (exports) {
 define('library-app/tests/router.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - .');
-  QUnit.test('router.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - router.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'router.js should pass jshint.');
   });
@@ -354,8 +354,8 @@ define('library-app/tests/router.jshint', ['exports'], function (exports) {
 define('library-app/tests/routes/about.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - routes');
-  QUnit.test('routes/about.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - routes/about.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'routes/about.js should pass jshint.');
   });
@@ -363,8 +363,8 @@ define('library-app/tests/routes/about.jshint', ['exports'], function (exports) 
 define('library-app/tests/routes/admin/contacts.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - routes/admin');
-  QUnit.test('routes/admin/contacts.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - routes/admin/contacts.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'routes/admin/contacts.js should pass jshint.');
   });
@@ -372,8 +372,8 @@ define('library-app/tests/routes/admin/contacts.jshint', ['exports'], function (
 define('library-app/tests/routes/admin/invitations.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - routes/admin');
-  QUnit.test('routes/admin/invitations.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - routes/admin/invitations.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'routes/admin/invitations.js should pass jshint.');
   });
@@ -381,8 +381,8 @@ define('library-app/tests/routes/admin/invitations.jshint', ['exports'], functio
 define('library-app/tests/routes/admin/seeder.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - routes/admin');
-  QUnit.test('routes/admin/seeder.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - routes/admin/seeder.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'routes/admin/seeder.js should pass jshint.');
   });
@@ -390,8 +390,8 @@ define('library-app/tests/routes/admin/seeder.jshint', ['exports'], function (ex
 define('library-app/tests/routes/contact.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - routes');
-  QUnit.test('routes/contact.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - routes/contact.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'routes/contact.js should pass jshint.');
   });
@@ -399,8 +399,8 @@ define('library-app/tests/routes/contact.jshint', ['exports'], function (exports
 define('library-app/tests/routes/index.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - routes');
-  QUnit.test('routes/index.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - routes/index.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'routes/index.js should pass jshint.');
   });
@@ -408,8 +408,8 @@ define('library-app/tests/routes/index.jshint', ['exports'], function (exports) 
 define('library-app/tests/routes/libraries/edit.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - routes/libraries');
-  QUnit.test('routes/libraries/edit.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - routes/libraries/edit.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'routes/libraries/edit.js should pass jshint.');
   });
@@ -417,8 +417,8 @@ define('library-app/tests/routes/libraries/edit.jshint', ['exports'], function (
 define('library-app/tests/routes/libraries/index.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - routes/libraries');
-  QUnit.test('routes/libraries/index.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - routes/libraries/index.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'routes/libraries/index.js should pass jshint.');
   });
@@ -426,8 +426,8 @@ define('library-app/tests/routes/libraries/index.jshint', ['exports'], function 
 define('library-app/tests/routes/libraries/new.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - routes/libraries');
-  QUnit.test('routes/libraries/new.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - routes/libraries/new.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'routes/libraries/new.js should pass jshint.');
   });
@@ -435,8 +435,8 @@ define('library-app/tests/routes/libraries/new.jshint', ['exports'], function (e
 define('library-app/tests/routes/libraries.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - routes');
-  QUnit.test('routes/libraries.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - routes/libraries.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'routes/libraries.js should pass jshint.');
   });
@@ -448,8 +448,8 @@ define('library-app/tests/test-helper', ['exports', 'library-app/tests/helpers/r
 define('library-app/tests/test-helper.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - .');
-  QUnit.test('test-helper.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - test-helper.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'test-helper.js should pass jshint.');
   });
@@ -470,8 +470,8 @@ define('library-app/tests/unit/controllers/index-test', ['exports', 'ember-qunit
 define('library-app/tests/unit/controllers/index-test.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - unit/controllers');
-  QUnit.test('unit/controllers/index-test.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - unit/controllers/index-test.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'unit/controllers/index-test.js should pass jshint.');
   });
@@ -492,8 +492,8 @@ define('library-app/tests/unit/models/invitation-test', ['exports', 'ember-qunit
 define('library-app/tests/unit/models/invitation-test.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - unit/models');
-  QUnit.test('unit/models/invitation-test.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - unit/models/invitation-test.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'unit/models/invitation-test.js should pass jshint.');
   });
@@ -513,8 +513,8 @@ define('library-app/tests/unit/routes/about-test', ['exports', 'ember-qunit'], f
 define('library-app/tests/unit/routes/about-test.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - unit/routes');
-  QUnit.test('unit/routes/about-test.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - unit/routes/about-test.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'unit/routes/about-test.js should pass jshint.');
   });
@@ -534,8 +534,8 @@ define('library-app/tests/unit/routes/admin/invitations-test', ['exports', 'embe
 define('library-app/tests/unit/routes/admin/invitations-test.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - unit/routes/admin');
-  QUnit.test('unit/routes/admin/invitations-test.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - unit/routes/admin/invitations-test.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'unit/routes/admin/invitations-test.js should pass jshint.');
   });
@@ -555,8 +555,8 @@ define('library-app/tests/unit/routes/contact-test', ['exports', 'ember-qunit'],
 define('library-app/tests/unit/routes/contact-test.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - unit/routes');
-  QUnit.test('unit/routes/contact-test.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - unit/routes/contact-test.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'unit/routes/contact-test.js should pass jshint.');
   });
@@ -576,8 +576,8 @@ define('library-app/tests/unit/routes/libraries-test', ['exports', 'ember-qunit'
 define('library-app/tests/unit/routes/libraries-test.jshint', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint - unit/routes');
-  QUnit.test('unit/routes/libraries-test.js should pass jshint', function (assert) {
+  QUnit.module('JSHint - unit/routes/libraries-test.js');
+  QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'unit/routes/libraries-test.js should pass jshint.');
   });
