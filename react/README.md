@@ -1,18 +1,17 @@
-React Router Tutorial
-=====================
+# Setting up the Project
 
-Quick lessons for getting up-to-speed with React Router.
+First you'll need [Node.js](https://nodejs.org) and the package manager
+that comes with it: [npm](https://www.npmjs.com/).
 
-See [01-setting-up.md](/lessons/01-setting-up.md) to get started.
+Once you've got that working, head to the command line where we'll set
+up our project.
 
-Each lesson has a commit for the final code so you can `git checkout
-<previous lesson final sha>` before starting a new one if you'd like.
+## Set up
 
-Missing stuff that will come eventually, hopefully ... maybe.
+```
+cd react
+git checkout start
+npm start
+```
 
-1. an app that isn't completely pointless
-- egghead.io videos
-- code splitting
-- location state
-- data integration
-
+Now open up http://localhost:8080
