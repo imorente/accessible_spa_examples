@@ -69,7 +69,7 @@ This Ember app uses a router file (`app/router.js`) to define and map each route
 export default Ember.Route.extend({
 ...
   renderTemplate(args) {
-    this.super(...args);
+    this._super(...args);
     Ember.run.scheduleOnce('afterRender', this, function() {
       announce_view_loaded();
     });
